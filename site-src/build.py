@@ -92,7 +92,7 @@ __BODY__
 <span class="brand__name">Levana</span>
 <span class="brand__sub">Life Sciences</span>
 <p>Your trusted licensed medical store in Meerut, Uttar Pradesh. Genuine medicines, pharmacist-verified orders and friendly service, online and in-store.</p>
-<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>
+<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG<br><strong>Pharmacist</strong> B.Pharm, UP-PC-45219</div>
 </div>
 <div>
 <h4>Explore</h4>
@@ -271,7 +271,7 @@ BODY_HOME = """
 </div>
 <dl class="spec-rows">
 <div class="spec-row"><dt>Drug licence</dt><dd>Forms 20B and 21B, Uttar Pradesh</dd></div>
-<div class="spec-row"><dt>Pharmacist</dt><dd>Mr. Amit Sharma, B.Pharm</dd></div>
+<div class="spec-row"><dt>Pharmacist</dt><dd>B.Pharm</dd></div>
 <div class="spec-row"><dt>GSTIN</dt><dd>09AANFL0727C1ZG</dd></div>
 <div class="spec-row"><dt>Records</dt><dd>Retained securely for 3+ years</dd></div>
 <div class="spec-row"><dt>Privacy</dt><dd>Aligned with the DPDP Act</dd></div>
@@ -458,7 +458,7 @@ BODY_ABOUT = """
 <div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0114 0v1"/></svg></div>
 <h3>Registered pharmacist</h3>
 <p>A qualified, registered pharmacist is present during all working hours and verifies every prescription order.</p>
-<span class="value">Mr. Amit Sharma, B.Pharm<br>UP-PC-45219</span>
+<span class="value">B.Pharm<br>UP-PC-45219</span>
 <button class="btn btn--ghost btn--sm js-demo-doc" type="button">View registration</button>
 </div>
 <div class="cred-card reveal">

@@ -71,10 +71,6 @@ sub(
     "Main Road, Kichha, Udham Singh Nagar, Uttarakhand 263148",
     FULL_ADDR,
 )
-sub(
-    '<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UK/20B-21B/2024/1876<br><strong>GSTIN</strong> 05ABCDE1234F1Z5<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UK-PC-45219</div>',
-    '<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09ABCDE1234F1Z5<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>',
-)
 sub("UK/20B-21B/2024/1876", "UP/20B-21B/2026/1876", 1)
 sub("UK-PC-45219", "UP-PC-45219", 1)
 sub("05ABCDE1234F1Z5", "09ABCDE1234F1Z5", 2)
@@ -158,6 +154,15 @@ for old, new, count in edits:
     found = t.count(old)
     assert found == count, f"expected {count} of {old[:70]!r}, found {found}"
     t = t.replace(old, new)
+
+# Remove pharmacist names from legacy markup without retaining the name in this migration.
+for pattern in (
+    r'(?<=<strong>Pharmacist</strong> )Mr\. [^,<]+, ',
+    r'(?<=<dt>Pharmacist</dt><dd>)Mr\. [^,<]+, ',
+    r'(?<=<span class="value">)Mr\. [^,<]+, ',
+):
+    t, n = re.subn(pattern, "", t, count=1)
+    assert n == 1, f"pharmacist name pattern not found: {pattern}"
 
 # favicon line: swap the old SVG monogram for the client mark PNG
 t2, n = re.subn(
