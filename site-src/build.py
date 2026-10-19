@@ -23,7 +23,7 @@ IMG_DESK = img_uri("desk.jpg")
 # FIX-MEDIA: real brand logo and monogram supplied by the client
 IMG_LOGO = img_uri("logo.jpg")
 IMG_MARK = img_uri("mark.png")
-# FIX-MEDIA: GST registration certificate, redacted verification copy for the documents section
+# FIX-MEDIA: GST registration certificate displayed in the documents section
 DOC_GST_PDF = "data:application/pdf;base64," + base64.b64encode((ROOT / "img" / "gst-certificate.pdf").read_bytes()).decode("ascii")
 DOC_GST_P1 = img_uri("gst-p1.jpg")
 DOC_GST_P2 = img_uri("gst-p2.jpg")
@@ -444,7 +444,7 @@ BODY_ABOUT = """
 <span class="label">Our credentials</span>
 <h2 id="cred-title">Documents you can <em>verify.</em></h2>
 </div>
-<div class="sec-head__side"><p>Watermarked verification copies are shown below. Originals are kept at our store and can be inspected in person at any time.</p></div>
+<div class="sec-head__side"><p>View the GST registration certificate below or download the complete certificate PDF.</p></div>
 </div>
 <div class="cred-grid">
 <div class="cred-card reveal">
@@ -464,7 +464,7 @@ BODY_ABOUT = """
 </div>
 </div>
 </section>
-<!-- FIX: trust documents section, redacted verification copies with PDF download -->
+<!-- FIX: trust documents section with full certificate PDF download -->
 <section class="section docs-section" id="documents" aria-labelledby="docs-title">
 <div class="container">
 <div class="sec-head">
@@ -494,9 +494,8 @@ BODY_ABOUT = """
 <div class="doc-pages">
 <a class="doc-page" data-pdf-href="copy" href="#documents" target="_blank" rel="noopener" aria-label="Open GST certificate, page 1"><img src="__DOC_GST_P1__" alt="GST registration certificate, Form GST REG-06, page 1" width="820" height="1159" loading="lazy" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'"></a>
 <a class="doc-page" data-pdf-href="copy" href="#documents" target="_blank" rel="noopener" aria-label="Open GST certificate, page 2"><img src="__DOC_GST_P2__" alt="GST registration certificate, Annexure A, page 2" width="820" height="1159" loading="lazy" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'"></a>
-<a class="doc-page" data-pdf-href="copy" href="#documents" target="_blank" rel="noopener" aria-label="Open GST certificate, page 3"><img src="__DOC_GST_P3__" alt="GST registration certificate, Annexure B, page 3, partner photos withheld" width="820" height="1159" loading="lazy" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'"></a>
+<a class="doc-page" data-pdf-href="copy" href="#documents" target="_blank" rel="noopener" aria-label="Open GST certificate, page 3"><img src="__DOC_GST_P3__" alt="GST registration certificate, Annexure B, page 3" width="820" height="1159" loading="lazy" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'"></a>
 </div>
-<p class="doc-card__note">Page 3 carries passport photographs of the firm&#39;s partners. Those photos are withheld on this website in line with our privacy policy and the Digital Personal Data Protection Act.</p>
 </div>
 </div>
 </section>
