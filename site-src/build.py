@@ -455,13 +455,6 @@ BODY_ABOUT = """
 <button class="btn btn--ghost btn--sm js-demo-doc" type="button">View certificate</button>
 </div>
 <div class="cred-card reveal">
-<div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0114 0v1"/></svg></div>
-<h3>Registered pharmacist</h3>
-<p>A qualified, registered pharmacist is present during all working hours and verifies every prescription order.</p>
-<span class="value">B.Pharm<br>UP-PC-45219</span>
-<button class="btn btn--ghost btn--sm js-demo-doc" type="button">View registration</button>
-</div>
-<div class="cred-card reveal">
 <div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
 <h3>GST registration</h3>
 <p>Every order comes with a proper GST tax invoice with HSN codes. There are no hidden charges.</p>
@@ -565,9 +558,10 @@ BODY_CONTACT = """
 <section class="section" aria-label="Contact options">
 <div class="container contact-grid">
 <div class="contact-cards">
-<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span><div><strong>Call our helpline</strong><p><a href="tel:+919876543210">+91 98765 43210</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span><div><strong>Manager / Main contact</strong><p><a href="tel:+918219379566">+91 82193 79566</a></p></div></div>
 <div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 11.5a8.4 8.4 0 01-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1121 11.5z"/></svg></span><div><strong>WhatsApp</strong><p><a href="https://wa.me/919876543210" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p></div></div>
-<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg></span><div><strong>Email</strong><p><a href="mailto:levanalifesciences26@gmail.com">levanalifesciences26@gmail.com</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg></span><div><strong>Harshit Pandey</strong><p><a href="tel:+919565796439">+91 95657 96439</a><br><a href="mailto:hp4961535@gmail.com">hp4961535@gmail.com</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg></span><div><strong>Aditya Gupta</strong><p><a href="tel:+919336463634">+91 93364 63634</a><br><a href="mailto:2005adityag@gmail.com">2005adityag@gmail.com</a></p></div></div>
 <div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><div><strong>Store hours</strong><p>Open daily, 8:00 AM to 11:00 PM</p></div></div>
 <div class="map-card">
 <strong>Visit our store</strong>
@@ -626,7 +620,7 @@ PAGES = [
      BODY_PRESCRIPTIONS),
     ("about.html",
      'About and Compliance | Levana Life Sciences',
-     'Levana Life Sciences is a licensed pharmacy in Meerut, Uttar Pradesh. View our drug licence, pharmacist registration, GST details and compliance practices.',
+     'Levana Life Sciences is a licensed pharmacy in Meerut, Uttar Pradesh. View our drug licence, GST details and compliance practices.',
      "about",
      BODY_ABOUT),
     ("contact.html",
@@ -656,6 +650,8 @@ for filename, title, desc, active, body in PAGES:
         .replace("__IMG_FALLBACK__", IMG_FALLBACK)
         .replace("__CSS__", css)
         .replace("__JS__", js)
+        .replace("919876543210", "918219379566")
+        .replace("98765 43210", "82193 79566")
     )
     (OUT / filename).write_text(html, encoding="utf-8")
     print("built", filename, len(html), "bytes")
