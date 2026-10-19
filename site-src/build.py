@@ -576,7 +576,8 @@ BODY_CONTACT = """
 <div class="field"><label for="cf-phone">Phone number</label><input id="cf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel"></div>
 <div class="field field--full"><label for="cf-email">Email (optional)</label><input id="cf-email" name="email" type="email" autocomplete="email"></div>
 <div class="field field--full"><label for="cf-msg">How can we help?</label><textarea id="cf-msg" name="message" required></textarea></div>
-<div class="field field--full"><button class="btn btn--primary btn--block js-demo-form" type="submit">Send message</button></div>
+<div class="field" hidden aria-hidden="true"><label for="cf-website">Leave this field empty</label><input id="cf-website" name="botcheck" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="field field--full"><button class="btn btn--primary btn--block" type="submit">Send message</button><p id="contact-status" role="status" aria-live="polite"></p></div>
 </form>
 </div>
 </div>

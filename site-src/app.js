@@ -386,14 +386,6 @@
     }
     var doc = t.closest(".js-demo-doc");
     if (doc) { e.preventDefault(); toast("The watermarked certificate will open here"); return; }
-    var demoForm = t.closest(".js-demo-form");
-    if (demoForm) {
-      e.preventDefault();
-      var form = demoForm.closest("form");
-      if (form) form.reset();
-      toast("Message received. Our team will call you shortly.");
-      return;
-    }
     var header = t.closest(".site-header");
     if (!header) closeNav();
   });
@@ -535,10 +527,42 @@
     renderProducts();
   }
 
+  var contactForm = $("#contact-form");
+  if (contactForm) {
+    var contactButton = $('button[type="submit"]', contactForm);
+    var contactStatus = $("#contact-status");
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      if (!contactButton || !contactStatus) return;
+
+      contactButton.disabled = true;
+      contactButton.textContent = "Sending...";
+      contactStatus.textContent = "";
+
+      try {
+        var response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+        });
+        var result = await response.json();
+        if (!response.ok || !result.success) throw new Error("Message could not be sent.");
+        contactForm.reset();
+        contactStatus.style.color = "var(--brand)";
+        contactStatus.textContent = "Message sent. Our team will get back to you shortly.";
+      } catch {
+        contactStatus.style.color = "var(--rx)";
+        contactStatus.textContent = "Unable to send your message. Please try again or call +91 82193 79566.";
+      } finally {
+        contactButton.disabled = false;
+        contactButton.textContent = "Send message";
+      }
+    });
+  }
+
   renderCart();
   observeReveals();
 
   var yearEl = $("#year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
-
